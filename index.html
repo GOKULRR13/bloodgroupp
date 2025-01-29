@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ABO Blood Grouping</title>
+
+    <link rel="stylesheet" href="front.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>ABO Blood Grouping</h1>
+        
+
+        <p>by GOKUL R R</p>
+
+        <!-- ================================================================================ -->
+        <form id="bloodGroupForm">
+            <label for="antiA">Anti-A Test :</label>
+
+            <select id="antiA" name="antiA">
+                <option value="">Select Result</option>
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+            </select>
+<!-- ========================================================================================= -->
+            <label for="antiB">Anti-B Test :</label>
+
+            <select id="antiB" name="antiB">
+                <option value="">Select Result</option>
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+            </select>
+<!-- ======================================================================================= -->
+            <label for="antiD">Anti-D Test :</label>
+
+            <select id="antiD" name="antiD">
+                <option value="">Select Result</option>
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+            </select>
+            <br><br>
+<!-- ========================================================================================== -->
+
+
+            <button type="button" onclick="determineBloodGroup()">Find Blood Group</button>
+
+        </form>
+
+        <p id="result"></p>
+    </div>
+
+
+    <script src="front.js"></script>
+</body>
+</html>
