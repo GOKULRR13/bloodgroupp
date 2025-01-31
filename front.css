@@ -11,7 +11,7 @@ body {
 
 .container {
     background-color: whitesmoke ;
-    padding: 20px;
+    padding: 24px;
     border-radius: 10px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     text-align: center;
@@ -24,12 +24,15 @@ form {
 
 label {
     margin: 10px 0 5px;
+    /* border: 1px solid black; */
 }
 
 select {
     margin-bottom: 15px;
     padding: 5px;
     /* text-align: center; */
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 button {
@@ -37,7 +40,7 @@ button {
     background-color: blue;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
