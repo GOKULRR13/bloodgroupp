@@ -15,40 +15,51 @@ function determineBloodGroup()
 
     
     if (antiA === 'positive' && antiB === 'negative')
+
          {
-        bloodGroup = 'A';
-    } 
-    else if (antiA === 'negative' && antiB === 'positive') 
-        {
-        bloodGroup = 'B';
-    } 
-    else if (antiA === 'positive' && antiB === 'positive')
+            bloodGroup = 'A';
+         } 
+
+    else if (antiA === 'negative' && antiB === 'positive')
+
          {
-        bloodGroup = 'AB';
-    } 
-    else if (antiA === 'negative' && antiB === 'negative') 
-        {
-        bloodGroup = 'O';
-    }
-    
-    if (bloodGroup !== '') {
-        if (antiD === 'positive') 
-            {
-            bloodGroup += '+';
+             bloodGroup = 'B';
         } 
+
+    else if (antiA === 'positive' && antiB === 'positive')
+
+         {
+            bloodGroup = 'AB';
+        } 
+    else if (antiA === 'negative' && antiB === 'negative') 
+
+         {
+            bloodGroup = 'O';
+        }
+    
+    if (bloodGroup !== '') 
+
+        {
+         if (antiD === 'positive') 
+            {
+              bloodGroup += '+';
+           } 
         else if (antiD === 'negative')
-             {
+        
+            {
             bloodGroup += '-';
         }
 
 
-    const endResult=document.getElementById('result').textContent = `Blood group is identified to be :  ${bloodGroup}`;
-    console.log(endResult);
+       const endResult=document.getElementById('result').textContent = `Blood group is identified to be :  ${bloodGroup}`;
+       console.log(endResult);
         
         
-    } 
+      } 
+
     else 
-    {
+   
+        {
         document.getElementById('result').textContent = ' Select valid test results for all fields.';
     }
     
